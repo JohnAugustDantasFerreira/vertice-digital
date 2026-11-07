@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contato — Fale com a Vértice Digital. Solicite um orçamento ou envie suas dúvidas sobre nossos serviços de marketing estratégico.">
+  <title>Contato — Vértice Digital</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Acessibilidade: Skip Link -->
+  <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
+  <!-- Edge Branding — Vertical Sidebar Label (Rotated 90° text in right margin) -->
+  <div class="vertical-sidebar-label" aria-hidden="true">VÉRTICE DIGITAL — MOD. 2026</div>
+
+  <!-- Header Global -->
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      <div class="site-brand">
+        <a href="index.html" class="brand-wordmark" aria-label="Vértice Digital — Página Inicial">VÉRTICE DIGITAL</a>
+        <span class="brand-tagline-micro">Marketing Estratégico</span>
+      </div>
+
+      <nav class="desktop-nav" aria-label="Menu principal">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="servicos.html" class="nav-link">Serviços</a></li>
+          <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+          <li><a href="portfolio.html" class="nav-link">Portfólio</a></li>
+          <li><a href="contato.html" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="contato.html" class="btn btn-pill-primary header-cta-desktop">Solicite um orçamento</a>
+        <button type="button" class="mobile-nav-toggle" aria-expanded="false" aria-controls="menu-movel" aria-label="Abrir menu">
+          Abrir menu
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Drawer de Navegação Mobile -->
+  <div id="menu-movel" class="mobile-nav-drawer" role="dialog" aria-modal="true" aria-label="Menu móvel">
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="servicos.html" class="mobile-nav-link">Serviços</a></li>
+      <li><a href="sobre.html" class="mobile-nav-link">Sobre</a></li>
+      <li><a href="portfolio.html" class="mobile-nav-link">Portfólio</a></li>
+      <li><a href="contato.html" class="mobile-nav-link">Contato</a></li>
+    </ul>
+    <div class="mobile-nav-footer">
+      <a href="contato.html" class="btn btn-pill-primary">Orçamento</a>
+      <span class="micro-legal">Vértice Digital — Projeto fictício para fins acadêmicos</span>
+    </div>
+  </div>
+
+  <!-- Conteúdo Principal -->
+  <main id="conteudo-principal">
+
+    <!-- 5.1 Apresentação da Página -->
+    <section class="section-wrapper" aria-labelledby="contato-header-title">
+      <div class="container">
+        <div style="max-width: 820px;">
+          <span class="tag-badge ember">Atendimento & Orçamentos</span>
+          <h1 id="contato-header-title" class="text-display">Vamos conversar sobre o seu próximo passo no digital?</h1>
+          <p class="lead-text">
+            Conte um pouco sobre seu negócio e sobre o que deseja desenvolver. Sua mensagem é o primeiro passo para entendermos suas necessidades e identificarmos possíveis soluções.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider-dashed">
+
+    <!-- Seção de Contato: Formulário e Canais -->
+    <section class="section-wrapper" aria-labelledby="form-section-title">
+      <div class="container">
+        <div class="grid-2" style="gap: clamp(32px, 6vw, 64px); align-items: start;">
+
+          <!-- 5.2 Formulário de Contato -->
+          <div class="card-darkroom" style="padding: clamp(24px, 4vw, 40px);">
+            <div style="margin-bottom: var(--spacing-24);">
+              <span class="tag-badge">Formulário</span>
+              <h2 id="form-section-title" class="text-heading-sm">Envie sua mensagem.</h2>
+              <p style="font-size: 15px; color: var(--color-warm-cream); opacity: 0.9;">
+                Preencha os campos abaixo para apresentar seu negócio e explicar como podemos ajudar.
+              </p>
+            </div>
+
+            <form id="contact-form" novalidate aria-label="Formulário de contato e orçamento">
+              <!-- Nome completo -->
+              <div class="form-group">
+                <label for="nome" class="form-label">
+                  Nome completo <span class="required-indicator" aria-hidden="true">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  class="form-input-underline"
+                  placeholder="Digite seu nome completo"
+                  required
+                  aria-describedby="nome-help nome-error"
+                >
+                <div id="nome-help" class="form-helper-text">Informe como podemos chamar você.</div>
+                <div id="nome-error" class="form-error-msg" role="alert">Este campo é obrigatório. Preencha a informação para continuar.</div>
+              </div>
+
+              <!-- Nome da empresa -->
+              <div class="form-group">
+                <label for="empresa" class="form-label">Nome da empresa</label>
+                <input
+                  type="text"
+                  id="empresa"
+                  name="empresa"
+                  class="form-input-underline"
+                  placeholder="Digite o nome da sua empresa"
+                  aria-describedby="empresa-help"
+                >
+                <div id="empresa-help" class="form-helper-text">Se não representar uma empresa, você pode informar seu nome profissional.</div>
+              </div>
+
+              <!-- E-mail -->
+              <div class="form-group">
+                <label for="email" class="form-label">
+                  E-mail <span class="required-indicator" aria-hidden="true">*</span>
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-input-underline"
+                  placeholder="voce@exemplo.com"
+                  required
+                  aria-describedby="email-help email-error"
+                >
+                <div id="email-help" class="form-helper-text">Informe um e-mail válido para retorno.</div>
+                <div id="email-error" class="form-error-msg" role="alert">Confira o endereço de e-mail informado.</div>
+              </div>
+
+              <!-- Telefone ou WhatsApp -->
+              <div class="form-group">
+                <label for="telefone" class="form-label">Telefone ou WhatsApp</label>
+                <input
+                  type="tel"
+                  id="telefone"
+                  name="telefone"
+                  class="form-input-underline"
+                  placeholder="(00) 00000-0000"
+                  aria-describedby="telefone-help"
+                >
+                <div id="telefone-help" class="form-helper-text">Inclua o código de área, se desejar receber contato por telefone ou WhatsApp.</div>
+              </div>
+
+              <!-- Serviço de interesse -->
+              <div class="form-group">
+                <label for="servico" class="form-label">
+                  Serviço de interesse <span class="required-indicator" aria-hidden="true">*</span>
+                </label>
+                <select
+                  id="servico"
+                  name="servico"
+                  class="form-select-underline"
+                  required
+                  aria-describedby="servico-error"
+                >
+                  <option value="" disabled selected>Selecione uma opção</option>
+                  <option value="redes">Gestão de Redes Sociais</option>
+                  <option value="identidade">Identidade Visual</option>
+                  <option value="conteudo">Criação de Conteúdo</option>
+                  <option value="trafego">Tráfego Pago</option>
+                  <option value="sites">Desenvolvimento de Sites</option>
+                  <option value="multiplos">Mais de um serviço</option>
+                  <option value="orientacao">Ainda não sei. Preciso de orientação.</option>
+                </select>
+                <div id="servico-error" class="form-error-msg" role="alert">Este campo é obrigatório. Preencha a informação para continuar.</div>
+              </div>
+
+              <!-- Mensagem -->
+              <div class="form-group">
+                <label for="mensagem" class="form-label">
+                  Mensagem <span class="required-indicator" aria-hidden="true">*</span>
+                </label>
+                <textarea
+                  id="mensagem"
+                  name="mensagem"
+                  class="form-textarea-underline"
+                  placeholder="Conte um pouco sobre seu negócio, seus objetivos e o que precisa."
+                  required
+                  aria-describedby="mensagem-help mensagem-error"
+                ></textarea>
+                <div id="mensagem-help" class="form-helper-text">Quanto mais contexto você compartilhar, melhor poderemos compreender sua solicitação.</div>
+                <div id="mensagem-error" class="form-error-msg" role="alert">Este campo é obrigatório. Preencha a informação para continuar.</div>
+              </div>
+
+              <div style="margin-top: var(--spacing-24);">
+                <button type="submit" class="btn btn-pill-primary" style="width: 100%;">Enviar mensagem</button>
+                <p class="micro-legal" style="margin-top: 8px; color: var(--color-driftwood); text-align: center;">
+                  Revise seus dados antes de enviar.
+                </p>
+              </div>
+
+              <!-- 5.3 Avisos do Formulário -->
+              <div id="form-demo-alert" class="form-alert form-alert-demo" style="display: none; margin-top: var(--spacing-18);" role="status">
+                <strong style="color: var(--color-ember-accent); text-transform: uppercase; font-size: 11px; display: block; margin-bottom: 4px;">
+                  Aviso caso o formulário ainda não esteja integrado
+                </strong>
+                Este formulário é demonstrativo e ainda não realiza o envio de mensagens. Os canais de atendimento deverão ser configurados antes da publicação.
+              </div>
+
+              <div id="form-success-alert" class="form-alert form-alert-success" role="status">
+                Mensagem enviada! Obrigado por entrar em contato. Sua solicitação foi recebida.
+              </div>
+            </form>
+          </div>
+
+          <!-- Coluna Lateral: Canais, Localização, Orientações -->
+          <div style="display: flex; flex-direction: column; gap: var(--spacing-31);">
+
+            <!-- 5.4 Canais de Atendimento -->
+            <div class="card-darkroom">
+              <span class="tag-badge">Comunicação Direta</span>
+              <h3 class="text-heading-sm">Escolha como prefere iniciar a conversa.</h3>
+              <p style="font-size: 14px; margin-bottom: var(--spacing-14);">
+                Os canais abaixo estão previstos para a experiência do site. Antes da publicação, substitua os campos demonstrativos pelos contatos oficiais autorizados.
+              </p>
+
+              <ul class="benefit-list" style="margin-bottom: var(--spacing-18);">
+                <li><strong>E-mail:</strong> endereço comercial a configurar.</li>
+                <li><strong>WhatsApp:</strong> número e link de atendimento a configurar.</li>
+                <li><strong>Instagram:</strong> perfil institucional a configurar.</li>
+              </ul>
+
+              <div class="btn-group" style="margin-top: var(--spacing-14);">
+                <a href="#contact-form" class="btn btn-ghost-outline" style="font-size: 11px;">Enviar e-mail</a>
+                <a href="#contact-form" class="btn btn-ghost-outline" style="font-size: 11px;">Conversar pelo WhatsApp</a>
+                <a href="#contact-form" class="btn btn-ghost-outline" style="font-size: 11px;">Acessar Instagram</a>
+              </div>
+
+              <p class="micro-legal" style="margin-top: var(--spacing-14); color: var(--color-driftwood);">
+                * Aviso de publicação: Não publicar endereços de e-mail, números de telefone, links ou perfis fictícios como se fossem canais reais da agência.
+              </p>
+            </div>
+
+            <!-- 5.5 Localização e Horário -->
+            <div class="card-darkroom">
+              <span class="tag-badge">Presença & Operação</span>
+              <h3 class="text-subheading">Atendimento digital.</h3>
+              <p style="font-size: 14px;">
+                A proposta da Vértice Digital prevê atendimento em formato digital, com possibilidade de atuação regional e nacional.
+              </p>
+              <div class="transparency-callout" style="margin-top: var(--spacing-14); margin-bottom: 0;">
+                <p class="micro-legal">
+                  <strong>Nota de transparência:</strong> O briefing apresenta Campina Grande — PB como localização fictícia. Não exibir endereço físico, mapa ou horário de funcionamento como informação real sem confirmação e autorização.
+                </p>
+              </div>
+            </div>
+
+            <!-- 5.6 Orientações ao Visitante -->
+            <div class="card-darkroom">
+              <span class="tag-badge">Orientações</span>
+              <h3 class="text-subheading">Antes de enviar sua mensagem.</h3>
+              <ul class="benefit-list" style="margin-bottom: var(--spacing-14);">
+                <li>Explique brevemente o que sua empresa faz.</li>
+                <li>Conte qual é seu principal objetivo ou desafio.</li>
+                <li>Se já tiver um serviço em mente, selecione a opção correspondente.</li>
+                <li>Confira seus dados de contato antes de concluir.</li>
+              </ul>
+
+              <p class="micro-legal" style="color: var(--color-driftwood);">
+                <strong>Texto de privacidade — versão auxiliar:</strong> As informações preenchidas neste formulário devem ser utilizadas somente para tratar a solicitação enviada. Antes de colocar o formulário em funcionamento, é necessário configurar o tratamento dos dados e disponibilizar a política de privacidade aplicável.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider-dashed">
+
+    <!-- 5.7 Chamada Final -->
+    <section class="section-wrapper" aria-labelledby="contato-cta-title">
+      <div class="container">
+        <div class="cta-banner">
+          <div style="max-width: 700px;">
+            <span class="tag-badge ember">Vamos Conversar</span>
+            <h2 id="contato-cta-title" class="text-heading">Toda boa estratégia começa com uma conversa.</h2>
+            <p class="lead-text">
+              Estamos prontos para conhecer sua ideia e entender o que sua marca precisa para avançar no ambiente digital.
+            </p>
+          </div>
+          <div>
+            <a href="#contact-form" class="btn btn-pill-primary">Enviar uma mensagem</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Global -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Coluna 1: Marca & Assinatura -->
+        <div>
+          <div class="brand-wordmark" style="font-size: 18px; margin-bottom: var(--spacing-8);">VÉRTICE DIGITAL</div>
+          <p class="micro-legal" style="color: var(--color-warm-cream); margin-bottom: var(--spacing-14);">
+            Marketing estratégico. Resultados que conectam.
+          </p>
+          <p style="font-size: 14px; opacity: 0.85;">
+            Transformamos ideias em estratégias digitais para conectar marcas às pessoas certas, fortalecer negócios e construir resultados.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Navegação</h3>
+          <ul class="footer-nav-list">
+            <li><a href="index.html" class="footer-nav-link">Home</a></li>
+            <li><a href="servicos.html" class="footer-nav-link">Serviços</a></li>
+            <li><a href="sobre.html" class="footer-nav-link">Sobre</a></li>
+            <li><a href="portfolio.html" class="footer-nav-link">Portfólio</a></li>
+            <li><a href="contato.html" class="footer-nav-link">Contato</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Canais Demonstrativos</h3>
+          <ul class="footer-nav-list">
+            <li><span style="font-size: 14px; color: var(--color-driftwood);">E-mail: comercial@exemplo.com (demonstrativo)</span></li>
+            <li><span style="font-size: 14px; color: var(--color-driftwood);">WhatsApp: (83) 90000-0000 (demonstrativo)</span></li>
+            <li><span style="font-size: 14px; color: var(--color-driftwood);">Instagram: @verticedigital (a configurar)</span></li>
+          </ul>
+          <div style="margin-top: var(--spacing-14);">
+            <h4 class="footer-heading" style="margin-bottom: 6px;">Localização Fictícia</h4>
+            <p style="font-size: 13px; color: var(--color-driftwood);">
+              Campina Grande — Paraíba. Atendimento em formato digital regional e nacional.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Inicie uma Conversa</h3>
+          <p style="font-size: 14px; margin-bottom: var(--spacing-14);">
+            Sua marca pode dar o próximo passo no digital. Vamos conversar sobre o seu projeto?
+          </p>
+          <a href="contato.html" class="btn btn-pill-primary" style="width: 100%;">Solicite um orçamento</a>
+        </div>
+      </div>
+
+      <div class="footer-academic-box">
+        <div class="academic-notice">
+          <strong>Aviso institucional:</strong> Projeto acadêmico fictício desenvolvido para a disciplina de Tópicos Especiais. As informações, métricas, serviços e materiais demonstrativos deste site não representam uma agência real nem comprovam resultados comerciais.
+        </div>
+        <div class="copyright-bar">
+          <span class="micro-legal">© Vértice Digital. Projeto fictício para fins acadêmicos.</span>
+          <span class="micro-legal">Design System: Darkroom Editorial</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

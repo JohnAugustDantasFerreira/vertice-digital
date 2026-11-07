@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio da Vértice Digital — Projetos conceituais e cases demonstrativos de estratégia, branding, conteúdo e desenvolvimento web.">
+  <title>Portfólio — Vértice Digital</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Acessibilidade: Skip Link -->
+  <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
+  <!-- Edge Branding — Vertical Sidebar Label (Rotated 90° text in right margin) -->
+  <div class="vertical-sidebar-label" aria-hidden="true">VÉRTICE DIGITAL — MOD. 2026</div>
+
+  <!-- Header Global -->
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      <div class="site-brand">
+        <a href="index.html" class="brand-wordmark" aria-label="Vértice Digital — Página Inicial">VÉRTICE DIGITAL</a>
+        <span class="brand-tagline-micro">Marketing Estratégico</span>
+      </div>
+
+      <nav class="desktop-nav" aria-label="Menu principal">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="servicos.html" class="nav-link">Serviços</a></li>
+          <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+          <li><a href="portfolio.html" class="nav-link">Portfólio</a></li>
+          <li><a href="contato.html" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="contato.html" class="btn btn-pill-primary header-cta-desktop">Solicite um orçamento</a>
+        <button type="button" class="mobile-nav-toggle" aria-expanded="false" aria-controls="menu-movel" aria-label="Abrir menu">
+          Abrir menu
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Drawer de Navegação Mobile -->
+  <div id="menu-movel" class="mobile-nav-drawer" role="dialog" aria-modal="true" aria-label="Menu móvel">
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="servicos.html" class="mobile-nav-link">Serviços</a></li>
+      <li><a href="sobre.html" class="mobile-nav-link">Sobre</a></li>
+      <li><a href="portfolio.html" class="mobile-nav-link">Portfólio</a></li>
+      <li><a href="contato.html" class="mobile-nav-link">Contato</a></li>
+    </ul>
+    <div class="mobile-nav-footer">
+      <a href="contato.html" class="btn btn-pill-primary">Orçamento</a>
+      <span class="micro-legal">Vértice Digital — Projeto fictício para fins acadêmicos</span>
+    </div>
+  </div>
+
+  <!-- Conteúdo Principal -->
+  <main id="conteudo-principal">
+
+    <!-- 4.1 Apresentação do Portfólio & Transparência -->
+    <section class="section-wrapper" aria-labelledby="portfolio-header-title">
+      <div class="container">
+        <div style="max-width: 820px;">
+          <span class="tag-badge ember">Projetos Conceituais</span>
+          <h1 id="portfolio-header-title" class="text-display">Ideias em prática: projetos para explorar possibilidades.</h1>
+          <p class="lead-text">
+            Este portfólio reúne exercícios conceituais que demonstram diferentes possibilidades de atuação em identidade visual, redes sociais, campanhas digitais e desenvolvimento de sites.
+          </p>
+
+          <!-- Aviso de Transparência em Destaque -->
+          <div class="transparency-callout" style="margin-top: var(--spacing-24);">
+            <div class="transparency-title">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+              Aviso de transparência em destaque
+            </div>
+            <p>
+              Todos os projetos, marcas e cenários apresentados nesta página são fictícios e foram criados para fins acadêmicos. Não representam clientes, contratos, campanhas executadas ou resultados comerciais reais.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider-dashed">
+
+    <!-- 4.2 Categorias de Projetos & Filtros Interativos -->
+    <section class="section-wrapper" aria-labelledby="filtros-title">
+      <div class="container">
+        <div style="margin-bottom: var(--spacing-24);">
+          <span class="tag-badge">Categorias</span>
+          <h2 id="filtros-title" class="text-heading-sm">Explore por área de atuação.</h2>
+          <p style="font-size: 15px; color: var(--color-driftwood);">
+            Selecione uma categoria para visualizar os projetos conceituais relacionados.
+          </p>
+        </div>
+
+        <div class="portfolio-filter-bar" role="toolbar" aria-label="Filtros de projetos">
+          <button type="button" class="btn btn-ghost-sm filter-btn active" data-filter="all">Todos os projetos</button>
+          <button type="button" class="btn btn-ghost-sm filter-btn" data-filter="identidade">Identidade Visual</button>
+          <button type="button" class="btn btn-ghost-sm filter-btn" data-filter="redes">Redes Sociais</button>
+          <button type="button" class="btn btn-ghost-sm filter-btn" data-filter="campanhas">Campanhas Digitais</button>
+          <button type="button" class="btn btn-ghost-sm filter-btn" data-filter="sites">Desenvolvimento de Sites</button>
+        </div>
+
+        <!-- 4.3 Galeria de Projetos & 4.4 Detalhamento dos Cases -->
+        <div class="grid-3" id="portfolio-grid">
+
+          <!-- Case 01: Gastronomia -->
+          <article class="project-card project-filter-item" data-category="identidade redes">
+            <div class="project-media-mockup">
+              <div class="project-mockup-graphic">
+                <div style="display: flex; justify-content: space-between;">
+                  <span class="tag-badge" style="margin: 0; font-size: 9px;">Case 01</span>
+                  <span class="micro-legal">Fictício</span>
+                </div>
+                <div>
+                  <span style="font-family: var(--font-primary); font-size: 15px; font-weight: 500; display: block;">Sabor & Arte Bistrô</span>
+                  <span class="micro-legal">Cenário Gastronomia</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-card-content">
+              <span class="tag-badge ember">Identidade Visual e Redes Sociais</span>
+              <h3 class="text-heading-sm">Projeto conceitual 01 — Gastronomia</h3>
+              <p class="micro-legal" style="color: var(--color-warm-cream); margin-bottom: var(--spacing-12);">
+                Segmento: Gastronomia — cenário fictício
+              </p>
+
+              <div class="case-breakdown">
+                <div>
+                  <div class="case-item-label">Desafio Simulado</div>
+                  <div class="case-item-text">
+                    Imaginar uma apresentação visual mais consistente para um negócio fictício de gastronomia e organizar sua comunicação nas redes sociais.
+                  </div>
+                </div>
+
+                <div>
+                  <div class="case-item-label">Solução Conceitual</div>
+                  <div class="case-item-text">
+                    Proposta de identidade visual e organização de conteúdos para apresentar a personalidade do negócio e manter unidade entre as publicações.
+                  </div>
+                </div>
+
+                <div>
+                  <div class="case-item-label">O que este projeto demonstra</div>
+                  <ul class="benefit-list" style="margin-top: 4px;">
+                    <li style="font-size: 13px;">Construção de uma direção visual.</li>
+                    <li style="font-size: 13px;">Aplicação de elementos de identidade em peças digitais.</li>
+                    <li style="font-size: 13px;">Organização de conteúdos para redes sociais.</li>
+                  </ul>
+                </div>
+
+                <div style="margin-top: var(--spacing-8);">
+                  <span class="micro-legal" style="font-style: italic;">
+                    * Peças demonstrativas de identidade visual e comunicação digital para uma marca fictícia de gastronomia.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 02: Moda -->
+          <article class="project-card project-filter-item" data-category="campanhas conteudo">
+            <div class="project-media-mockup">
+              <div class="project-mockup-graphic">
+                <div style="display: flex; justify-content: space-between;">
+                  <span class="tag-badge" style="margin: 0; font-size: 9px;">Case 02</span>
+                  <span class="micro-legal">Fictício</span>
+                </div>
+                <div>
+                  <span style="font-family: var(--font-primary); font-size: 15px; font-weight: 500; display: block;">Aura Coleções</span>
+                  <span class="micro-legal">Cenário Moda</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-card-content">
+              <span class="tag-badge ember">Criação de Conteúdo e Campanhas Digitais</span>
+              <h3 class="text-heading-sm">Projeto conceitual 02 — Moda</h3>
+              <p class="micro-legal" style="color: var(--color-warm-cream); margin-bottom: var(--spacing-12);">
+                Segmento: Moda — cenário fictício
+              </p>
+
+              <div class="case-breakdown">
+                <div>
+                  <div class="case-item-label">Desafio Simulado</div>
+                  <div class="case-item-text">
+                    Planejar uma comunicação digital para apresentar uma coleção fictícia e organizar conteúdos de divulgação.
+                  </div>
+                </div>
+
+                <div>
+                  <div class="case-item-label">Solução Conceitual</div>
+                  <div class="case-item-text">
+                    Exercício de planejamento de conteúdo e estruturação de uma campanha digital demonstrativa, com peças visuais e mensagens coerentes com a proposta da marca fictícia.
+                  </div>
+                </div>
+
+                <div>
+                  <div class="case-item-label">O que este projeto demonstra</div>
+                  <ul class="benefit-list" style="margin-top: 4px;">
+                    <li style="font-size: 13px;">Planejamento de pautas e mensagens.</li>
+                    <li style="font-size: 13px;">Criação de peças para comunicação digital.</li>
+                    <li style="font-size: 13px;">Organização conceitual de uma campanha.</li>
+                  </ul>
+                </div>
+
+                <div style="margin-top: var(--spacing-8);">
+                  <span class="micro-legal" style="font-style: italic;">
+                    * Exemplos fictícios de conteúdos e peças de campanha para uma marca conceitual de moda.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 03: Comércio Local -->
+          <article class="project-card project-filter-item" data-category="sites">
+            <div class="project-media-mockup">
+              <div class="project-mockup-graphic">
+                <div style="display: flex; justify-content: space-between;">
+                  <span class="tag-badge" style="margin: 0; font-size: 9px;">Case 03</span>
+                  <span class="micro-legal">Fictício</span>
+                </div>
+                <div>
+                  <span style="font-family: var(--font-primary); font-size: 15px; font-weight: 500; display: block;">Empório Central</span>
+                  <span class="micro-legal">Cenário Comércio Local</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-card-content">
+              <span class="tag-badge ember">Desenvolvimento de Sites</span>
+              <h3 class="text-heading-sm">Projeto conceitual 03 — Comércio local</h3>
+              <p class="micro-legal" style="color: var(--color-warm-cream); margin-bottom: var(--spacing-12);">
+                Segmento: Comércio local — cenário fictício
+              </p>
+
+              <div class="case-breakdown">
+                <div>
+                  <div class="case-item-label">Desafio Simulado</div>
+                  <div class="case-item-text">
+                    Criar uma proposta de apresentação digital para um comércio fictício que precisa organizar informações sobre sua empresa, produtos e serviços.
+                  </div>
+                </div>
+
+                <div>
+                  <div class="case-item-label">Solução Conceitual</div>
+                  <div class="case-item-text">
+                    Estrutura demonstrativa de um site institucional, com navegação organizada, apresentação do negócio e caminhos para contato.
+                  </div>
+                </div>
+
+                <div>
+                  <div class="case-item-label">O que este projeto demonstra</div>
+                  <ul class="benefit-list" style="margin-top: 4px;">
+                    <li style="font-size: 13px;">Organização de páginas e informações.</li>
+                    <li style="font-size: 13px;">Hierarquia de conteúdo e navegação.</li>
+                    <li style="font-size: 13px;">Estrutura responsiva como diretriz de experiência.</li>
+                  </ul>
+                </div>
+
+                <div style="margin-top: var(--spacing-8);">
+                  <span class="micro-legal" style="font-style: italic;">
+                    * Layout conceitual de site institucional para um comércio fictício.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Mensagem de lista vazia para filtros -->
+        <div id="portfolio-empty-state" style="display: none; padding: var(--spacing-41) 0; text-align: left;">
+          <p style="color: var(--color-driftwood);">Não encontramos projetos nesta categoria.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <hr class="divider-dashed">
+
+    <!-- 4.4 Detalhamento & Raciocínio -->
+    <section class="section-wrapper" aria-labelledby="raciocinio-title">
+      <div class="container">
+        <div class="card-darkroom" style="padding: clamp(24px, 4vw, var(--spacing-45));">
+          <div style="max-width: 820px;">
+            <span class="tag-badge">Metodologia Criativa</span>
+            <h2 id="raciocinio-title" class="text-heading">Do desafio à solução: o raciocínio por trás de cada proposta.</h2>
+            <p class="lead-text">
+              Cada projeto conceitual parte de uma necessidade simulada e apresenta uma possível resposta por meio de estratégia, conteúdo, design ou tecnologia. Os exemplos ajudam a visualizar como as soluções podem ser organizadas de acordo com o contexto de cada negócio.
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: var(--spacing-12); margin-top: var(--spacing-18);">
+              <span class="tag-badge">Contexto fictício</span>
+              <span class="tag-badge">Necessidade simulada</span>
+              <span class="tag-badge">Solução proposta</span>
+              <span class="tag-badge">Peças demonstrativas</span>
+              <span class="tag-badge">Serviços relacionados</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider-dashed">
+
+    <!-- 4.5 Indicadores Demonstrativos -->
+    <section class="section-wrapper" aria-labelledby="indicadores-portfolio-title">
+      <div class="container">
+        <div style="max-width: 760px; margin-bottom: var(--spacing-31);">
+          <span class="tag-badge">Dados e Métricas</span>
+          <h2 id="indicadores-portfolio-title" class="text-heading">Indicadores ajudam a orientar decisões.</h2>
+          <p>
+            Em projetos reais, dados como alcance, engajamento, cliques em campanhas e visitas a sites podem ajudar a avaliar ações digitais. Nesta apresentação acadêmica, esses indicadores são apenas referências de demonstração e não correspondem a resultados obtidos.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="stat-box">
+            <span class="tag-badge ember">Simulação</span>
+            <div class="stat-value" style="font-size: 36px; margin-top: 8px;">Exemplo 01</div>
+            <div class="stat-label">Alcance de Publicações</div>
+            <p style="font-size: 13px; color: var(--color-driftwood); margin-top: 8px;">
+              Visualização simulada para ilustrar a medição de pontos de contato em redes sociais.
+            </p>
+          </div>
+
+          <div class="stat-box">
+            <span class="tag-badge ember">Simulação</span>
+            <div class="stat-value" style="font-size: 36px; margin-top: 8px;">Exemplo 02</div>
+            <div class="stat-label">Taxa de Engajamento</div>
+            <p style="font-size: 13px; color: var(--color-driftwood); margin-top: 8px;">
+              Modelo conceitual para aferição da resposta do público a pautas de conteúdo.
+            </p>
+          </div>
+
+          <div class="stat-box">
+            <span class="tag-badge ember">Simulação</span>
+            <div class="stat-value" style="font-size: 36px; margin-top: 8px;">Exemplo 03</div>
+            <div class="stat-label">Visitas a Sites</div>
+            <p style="font-size: 13px; color: var(--color-driftwood); margin-top: 8px;">
+              Métrica de tráfego estruturada para analisar navegação e conversão em páginas web.
+            </p>
+          </div>
+        </div>
+
+        <div class="transparency-callout" style="margin-top: var(--spacing-24);">
+          <p class="micro-legal">
+            <strong>Nota de transparência:</strong> Não são exibidos números, percentuais, gráficos ou comparações que possam ser interpretados como desempenho real. Cada visualização nesta interface é explicitamente identificada como simulação fictícia ou exemplo demonstrativo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider-dashed">
+
+    <!-- 4.6 Chamada para Desenvolver um Projeto -->
+    <section class="section-wrapper" aria-labelledby="portfolio-cta-title">
+      <div class="container">
+        <div class="cta-banner">
+          <div style="max-width: 700px;">
+            <span class="tag-badge ember">Novo Projeto</span>
+            <h2 id="portfolio-cta-title" class="text-heading">Seu negócio pode ser o ponto de partida de um novo projeto.</h2>
+            <p class="lead-text">
+              Tem uma ideia, um desafio de comunicação ou uma presença digital que deseja fortalecer? Conte o que você precisa e vamos conversar sobre as possibilidades.
+            </p>
+          </div>
+          <div class="btn-group">
+            <a href="contato.html" class="btn btn-pill-primary">Quero conversar sobre meu projeto</a>
+            <a href="contato.html" class="btn btn-ghost-outline">Solicite um orçamento</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Global -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Coluna 1: Marca & Assinatura -->
+        <div>
+          <div class="brand-wordmark" style="font-size: 18px; margin-bottom: var(--spacing-8);">VÉRTICE DIGITAL</div>
+          <p class="micro-legal" style="color: var(--color-warm-cream); margin-bottom: var(--spacing-14);">
+            Marketing estratégico. Resultados que conectam.
+          </p>
+          <p style="font-size: 14px; opacity: 0.85;">
+            Transformamos ideias em estratégias digitais para conectar marcas às pessoas certas, fortalecer negócios e construir resultados.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Navegação</h3>
+          <ul class="footer-nav-list">
+            <li><a href="index.html" class="footer-nav-link">Home</a></li>
+            <li><a href="servicos.html" class="footer-nav-link">Serviços</a></li>
+            <li><a href="sobre.html" class="footer-nav-link">Sobre</a></li>
+            <li><a href="portfolio.html" class="footer-nav-link">Portfólio</a></li>
+            <li><a href="contato.html" class="footer-nav-link">Contato</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Canais Demonstrativos</h3>
+          <ul class="footer-nav-list">
+            <li><span style="font-size: 14px; color: var(--color-driftwood);">E-mail: comercial@exemplo.com (demonstrativo)</span></li>
+            <li><span style="font-size: 14px; color: var(--color-driftwood);">WhatsApp: (83) 90000-0000 (demonstrativo)</span></li>
+            <li><span style="font-size: 14px; color: var(--color-driftwood);">Instagram: @verticedigital (a configurar)</span></li>
+          </ul>
+          <div style="margin-top: var(--spacing-14);">
+            <h4 class="footer-heading" style="margin-bottom: 6px;">Localização Fictícia</h4>
+            <p style="font-size: 13px; color: var(--color-driftwood);">
+              Campina Grande — Paraíba. Atendimento em formato digital regional e nacional.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Inicie uma Conversa</h3>
+          <p style="font-size: 14px; margin-bottom: var(--spacing-14);">
+            Sua marca pode dar o próximo passo no digital. Vamos conversar sobre o seu projeto?
+          </p>
+          <a href="contato.html" class="btn btn-pill-primary" style="width: 100%;">Solicite um orçamento</a>
+        </div>
+      </div>
+
+      <div class="footer-academic-box">
+        <div class="academic-notice">
+          <strong>Aviso institucional:</strong> Projeto acadêmico fictício desenvolvido para a disciplina de Tópicos Especiais. As informações, métricas, serviços e materiais demonstrativos deste site não representam uma agência real nem comprovam resultados comerciais.
+        </div>
+        <div class="copyright-bar">
+          <span class="micro-legal">© Vértice Digital. Projeto fictício para fins acadêmicos.</span>
+          <span class="micro-legal">Design System: Darkroom Editorial</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -3,7 +3,7 @@ node_modules/
 package-lock.json
 
 # Build artifacts
-public/
+# public/ (kept for deployment)
 
 # OS files
 Thumbs.db
@@ -21,4 +21,4 @@ Thumbs.db
 *.bak
 
 # Render specific
-render.yaml
+# render.yaml (kept for deployment)

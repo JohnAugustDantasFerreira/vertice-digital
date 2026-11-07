@@ -1,0 +1,7 @@
+services:
+  - type: static_site
+    name: vertice-digital
+    env: static
+    buildCommand: ""
+    publishPath: public
+    # Render will serve files directly from the "public" folder.
