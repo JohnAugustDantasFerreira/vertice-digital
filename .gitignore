@@ -1,0 +1,24 @@
+# Node & npm
+node_modules/
+package-lock.json
+
+# Build artifacts
+public/
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# IDE / editor files
+.vscode/
+.idea/
+*.suo
+*.user
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+
+# Render specific
+render.yaml
